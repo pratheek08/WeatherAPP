@@ -1,0 +1,33 @@
+<!-- A simple HTML form to send data to the backend API -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend</title>
+</head>
+<body>
+    <h1>Frontend</h1>
+    <form id="data-form">
+        <input type="text" id="data-input" placeholder="Enter data">
+        <button type="button" id="submit-button">Send Data</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('data-form');
+            const dataInput = document.getElementById('data-input');
+            const submitButton = document.getElementById('submit-button');
+
+            submitButton.addEventListener('click', function () {
+                const data = dataInput.value;
+                fetch(`/api/endpoint/?data=${data}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);
+                        console.log('Received from backend:', data.received_data);
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        });
+    </script>
+</body>
+</html>
