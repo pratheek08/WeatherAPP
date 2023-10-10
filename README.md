@@ -40,4 +40,11 @@ https://openweathermap.org/
 `$ serve -s build`
 `$ serve -h`
 
+## SCREENSHOTS OF RESULTS:
+
+<img width="522" alt="image" src="https://github.com/pratheek08/WeatherAPP/assets/83898956/c9a2a577-1080-4505-9983-f23c1f9bd578">
+
+<img width="525" alt="image" src="https://github.com/pratheek08/WeatherAPP/assets/83898956/097b8d00-570b-42f1-b5c3-f5fe95ca56fc">
+
+<img width="551" alt="image" src="https://github.com/pratheek08/WeatherAPP/assets/83898956/3bc9f25a-03a7-4497-a98b-c2afaa211fc4">
 
